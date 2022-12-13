@@ -173,7 +173,7 @@ p{
 }
 
 .footer__link:active{
-	color: red;
+	color: rgb(113, 63, 63);
 }
 
 /*Styles definidos pela pseudo-classe :visited vão ser substituidos por qualquer pseudo-classe 
