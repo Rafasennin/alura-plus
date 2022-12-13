@@ -1,0 +1,183 @@
+:root{
+
+	--main--white: #FFFFFF;
+	--description-grey: #C0C0C0;
+	--button-blue: #167BF7;
+	--background--black: #00030C;
+}
+
+/*
+a tag :
+*{
+	margin:0
+	padding:0
+}
+
+pode auxiliar na estilização, retirando as configurações by default pelo browser, assim
+podemos inserir as estilizações que desejarmos. Esta função pega só os elementos.
+*/
+
+
+
+body{
+
+	background: var(--background--black);
+	font-family: 'Inter', sans-serif; ;
+}
+
+.container__box{
+	margin:0 6em;
+}
+
+.container__titulo{
+	color: var(--main--white);
+	margin-top: 3em;
+	margin-bottom: 1rem;
+	font-weight: 700;
+	font-size: 28px;
+}
+
+.container__main__header{
+	background-image: url("img/background.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 50% 50% ;
+	text-align: center;
+	align-items: center;
+
+
+}
+
+/* 100 vh means 100% of view-port height*/
+
+.link__container{
+	background-color: var(--button-blue);
+	padding: 1em;
+	border-radius: 5px;
+	color:var(--main--white);
+	display:block;
+	text-decoration: none;
+	margin: 1em auto;
+	width:300px;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.button__2{
+	background-color: transparent;
+	border:2px solid var(--main--white);
+	border-radius: 5px;
+}
+
+p{
+	color:var(--description-grey);
+	font-size: 12px;
+}
+
+.container__img{
+	margin: 1em 0 2em 0;
+}
+
+.container__second{
+	display:grid;
+	grid-template-columns: 50% 50%;
+	text-align: center;
+	align-items: center;
+	margin:15em 6em;
+}
+
+
+
+.second__title{
+	color:#FFFFFF;
+	margin-bottom: 1rem;
+	font-size: 48px;
+	font-weight: 700;
+	text-align: left;
+}
+.second__description{
+	margin:0 6	em;
+	font-size: 16px;
+	color:var(--description-grey);
+	text-align: left;
+}
+
+.container__description2{
+	margin:0 3em 1em 3em;
+
+}
+
+.button__3{
+	margin-right: 30rem;
+	width:140px;
+}
+
+.icones__lista{
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	margin: 5em 0;
+}
+
+.icones__titulo{
+	color:var(--main--white);
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.descricao__item{
+	color:var(--main--white);
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.icones__principal{
+	text-align: center;
+}
+
+.footer__main{
+	text-align: center;
+}
+
+.footer__list{
+	display:flex;
+	justify-content: center;
+	margin: 3em 0;
+}
+
+.footer__link{
+	text-decoration: none;
+	color: var(--main--white);
+	font-size: 16px;
+	margin-left: 1em;
+}
+
+.footer__p{
+	color: var(--description-grey);
+	font-size: 14px;
+	margin: 3em 10em;
+}
+
+.footer__link :link{
+	color:green;
+}
+
+.footer__link :visited{
+	color:purple;
+}
+
+.footer__link:hover{
+	color: blue;	
+}
+
+.footer__link:active{
+	color: red;
+}
+
+/*Styles definidos pela pseudo-classe :visited vão ser substituidos por qualquer pseudo-classe 
+relacionada ao link subsequente (:link, :hover, ou :active) que tenha ao menos uma especificação igual.
+ Para estilizar links apropriadamente, garantindo assim seu funcionamento adequado, 
+ ponha a regra :visited depois da regra :link mas antes das regras :hover e :active , 
+ Pode-se definir pela ordem LVHA: :link — :visited — :hover — :active.*/
