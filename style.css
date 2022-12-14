@@ -173,11 +173,118 @@ p{
 }
 
 .footer__link:active{
-	color: rgb(113, 63, 63);
+	color: red;
 }
 
-/*Styles definidos pela pseudo-classe :visited vão ser substituidos por qualquer pseudo-classe 
-relacionada ao link subsequente (:link, :hover, ou :active) que tenha ao menos uma especificação igual.
- Para estilizar links apropriadamente, garantindo assim seu funcionamento adequado, 
- ponha a regra :visited depois da regra :link mas antes das regras :hover e :active , 
- Pode-se definir pela ordem LVHA: :link — :visited — :hover — :active.*/
+
+@media screen and (max-width: 768px){
+
+
+	.container__main__header{
+		background-image: none;
+		display: block;
+		width: 100vw;
+		height: 500px;
+	}
+
+	header p{
+		width: 100vw;
+	}
+
+	.container__titulo{
+		width: 100vw;
+		margin: 3em auto;
+	}
+
+	.container__box{
+		margin: 5em 10em;
+	}
+
+	.container__second{
+		display: block;
+		text-align: center;
+		margin-left: 5em;
+	}
+
+	.second__description{
+		width: 500px;
+		text-align: center;
+		margin: 1em 0 2em 0;
+	}
+
+	.image__second{
+		width: 300px;
+		margin: 2em 6em;
+		text-align: center;	
+
+	}
+
+	.container__description{
+		width: 500px;
+		text-align: center;	
+
+	}
+
+	.container__description2{
+		width: 100vw;	
+		margin: 1em auto;	
+
+	}
+
+	.telas__2{
+		margin:1em 0 1em 3em;
+		width: 400px;
+	}
+
+	.second__title{
+		width: 500px;
+		text-align: center;
+	}
+
+	.button__3{
+
+		margin: 1em 0 1em 8em;
+		text-align: center;
+	}
+
+	.icones__lista{
+		display: block;
+		margin: 2em 0 2em 6em;
+		text-align: center;
+	}
+
+	.icones__titulo{
+		margin: 1em 0 1em 2em;
+		text-align: center;
+		width: 400px;
+	}
+
+	.descricao__item{
+		text-align: center;
+		margin: 1em 0 1em 2em;	
+	}
+
+	.footer__main{
+		width: 500px;
+		text-align: center;
+		margin: 3em 0;
+
+	}
+
+	.footer__p{
+		width: 400px;
+		text-align: center;
+		margin-left: 5em;
+	}
+
+	.footer__logo{
+		text-align: center;
+		margin: 1em 1em 1em 3em;
+	}
+	
+	.footer__list{
+		display: block;
+		margin: 2em 0;
+	}
+	
+}
